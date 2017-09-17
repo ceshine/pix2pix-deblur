@@ -1,0 +1,8 @@
+.git
+.cache
+__pycache__
+*~
+
+debug
+checkpoint
+samples
