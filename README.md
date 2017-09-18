@@ -34,13 +34,14 @@ nvidia-docker run -ti --init -v /mnt/SSD_Data/mirflickr/:/data \
 Start training (use `python train.py -h` to see the list of available command-line parameters):
 
 ```
-python train.py --dataset /data --batchSize 16 --nEpochs 200 --cuda --testBatchSize 32 --lamb 5 --lrG 5e-5 --lrD 5e-5
+python train.py --dataset /data --batchSize 16 --nEpochs 200 \
+                --cuda --testBatchSize 32 --lamb 5 --lrG 5e-5 --lrD 5e-5
 ```
 
 Debug images will be write to `debug` folder. Modek checkpoints will be write to `checkpoint`.
 
 ## Predicting / Deblurring
 
-**Work In Progress**
+**Work In Progress** (deblur.py)
 
 Currently only photos with longer edge shorter than 512 px are supported (Given that your GPU has enough RAM).
